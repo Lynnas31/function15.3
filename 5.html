@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    arr1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe','Regulus'];
+    arr2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major','Leo'];
+    function check(x){
+        arrlength = arr1.length;
+        let idx = 0;
+        let isStar = false;
+        for (i = 0;i<arrlength;i++){
+            if (x === arr1[i]){
+                idx = i;
+                isStar= true;
+                break;
+            }
+
+        } if (isStar){
+            star = arr2[idx];
+            document.write(star);
+        }  else {
+            alert("day khong phai ngoi sao")
+        }
+    }
+    x =prompt("");
+    check(x);
+</script>
+
+</body>
+</html>
